@@ -1,0 +1,38 @@
+h1 {
+    color: rgba(201, 166, 70, 0.849);
+    font-size: 9em;
+    font-family: monospace;
+    text-decoration: underline  overline;
+    text-decoration-color: rgba(201, 166, 70, 0.849);
+}
+.profile-picture{
+    border-radius: 0px;
+    
+}
+.profile-picture:hover{
+    border-radius: 200px;
+    transform: scale(2,2);
+}
+.hyper{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50pt;
+    color: rgb(201, 166, 70);
+    line-height:50pt;
+    
+}
+
+.hyper:hover{
+    font-family: 'Courier New', Courier, monospace;
+    font-size:50pt;
+    color:white;
+    line-height:50pt;
+    
+}
+.box-150{
+    width: 150px;
+    height:150px;
+
+}
+body{
+    background-image: url(images/background-image.jpg)
+}
