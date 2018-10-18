@@ -1,0 +1,13 @@
+.slides{
+    height: 300px;   
+}
+.outer{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+.controls{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}

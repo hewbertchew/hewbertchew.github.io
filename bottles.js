@@ -1,9 +1,27 @@
-var Bott = 99;
-while(Bott >1){
-    console.log(`${Bott} bottles of beer on the wall. ${Bott} bottles of beer.`);
-    Bott -= 1
-    console.log(`Take one down and pass it around, ${Bott} bottles of beer on the wall`);
+var Lyric = function(x){
+    if(x>1){
+        return(`${x} bottles of beer on the wall. ${x} bottles of beer.\n
+         Take one down and pass it around, ${x-1} bottles of beer on the wall`)
+    }else if(x>0){
+        return(`${x} bottles of beer on the wall. ${x} bottles of beer.\n
+        Take one down and pass it around, no more bottles of beer on the wall`)
+    }else{
+        return(`No more bottles of beer on the wall, no more bottles of beer.\n
+        Go to the store and buy some more, ${x=99} bottles of beer on the wall.`)
+    }
+
 }
-console.log(`No more bottles of beer on the wall, no more bottles of beer.`);
-console.log(`Go to the store and buy some more, ${Bott=99} bottles of beer on the wall`);
-console.log(Bott);
+
+
+var Bott = 99;
+while(Bott >=0){
+    console.log(Lyric(Bott));
+    Bott--; 
+}
+
+var printbottle = function(){
+    var elem = document.createElement('img');
+    elem.src = 'images/Beer.png';
+    return(elem)
+}
+
