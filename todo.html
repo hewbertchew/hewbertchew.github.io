@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To do assignment</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="tasklist.css">
+</head>
+<body>
+    
+    <div class='container'>
+        <h1>Task List</h1>
+    <form>
+    <div class="form-group">
+        
+            <div>
+                <label for="task">Task</label>
+            </div>
+            <div>
+                <input type="text" name="Task" id="task" class='form-control' placeholder="Item in here">
+            </div>
+            <div>
+                <small id="githelp" class="form-text text-muted">What do you need to do?
+                </small>
+            </div>
+            <div>
+                <input type="date" name="Deadline" id="deadline" class="form-control">
+                <small id="datehelp" class="form-text text-muted">When is it imperative to rush?</small>
+            </div>
+            <label for="Priority">Priority</label>
+            <div>
+                <select name="Priority" id="Priority">
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>    
+            </div>
+        <div class="btn-group" role="group"></div>
+            <button type="reset" class="btn btn-primary" id="Clear"><i class="fas fa-eraser"></i>Clear</button>
+            <button type="button" class="btn btn-secondary" id="Add"><i class="fas fa-plus"></i>Add</button>
+        </div>
+
+    
+    </form>
+    <ul id="unilist" class="list-group-item spread">
+    </ul>
+    <script src="tasklist.js"></script>
+</div>
+    
+</body>
+</html>

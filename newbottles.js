@@ -19,12 +19,13 @@ var mkLine=function(n){
 var btnclk = document.querySelector('#newline');
 var shields = parseInt(prompt("How Many Shields do you have?"));
 btnclk.addEventListener('click',function(){
-    shields--;
+    
     if (shields>=0){
         mkLine(shields);
     }else{
         shields=0;
     }
+    shields--;
 })
 
 
